@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    {{>header_links}}
+  </head>
+  <body>
+    {{>navbar}}
+
+    <!-- main header  -->
+
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-0 col-12 mx-auto">
+          <div class="row">
+            <!-- right side div -->
+            <div class="col-md-6 col-12 main_header_right">
+              
+                <img src="images/error.jpg" alt="kaif" class="img-fluid" title="kaifmanzar">
+              
+            </div>
+            <!-- left side div -->
+            <div class="col-md-6 col-12 main_header_left">
+              <p>Welcome to weather app</p>
+              <h1>This page<span class="text-clr"> Not Exists <br>404</span> {{errorMsg}}</h1>
+              <a href="/"><button>Back To Home</button></a>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer code   -->
+    {{>footer}}
+  </body>
+</html>

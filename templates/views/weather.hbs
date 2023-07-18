@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    {{>header_links}}
+    
+  </head>
+  <body>
+    {{>navbar}}
+
+    <!-- main header  -->
+        <div class="main">
+            <div class="searchbar">
+                <input type="text" id="city" placeholder="Search by your city name" autocomplete="off">
+                <input type="submit" id="subbtn">
+            </div>
+
+            <div class="output">
+                <div class="upper">
+                    <p id="day">Tueuuusday</p>
+                    {{!-- <p id="time">11:54 am</p> --}}
+                    <p id="date">16 Junuue</p>
+                </div>
+                <div class="lower">
+                    <p id="location">Dhanbad, India</p>
+                    <p id="temprature"><span id="temp">22.5</span> <sup>o</sup>C </p>
+                    <p id="mood"><i class="fa fa-cloud "></i></p>
+                </div>
+            </div>
+            
+        </div>
+
+    
+    <!-- footer code   -->
+    {{>footer}}
+  </body>
+  <script src="js/main.js"></script>
+</html>
